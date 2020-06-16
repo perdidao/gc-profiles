@@ -1,3 +1,5 @@
 {
-  "routes": [{ "src": "/player", "dest": "player/index.html" }]
+  "routes": [
+    { "src": "/player/*", "dest": "/index.html" }
+  ]
 }
