@@ -8,9 +8,11 @@ $pale-red: #FC6973;
 $yellow: #FACF5A;
 $green: #9CC00C;
 
+$shaded-white: rgba(255, 255, 255, 0.48);
+$border-white: rgba(255, 255, 255, 0.08);
+
 // Gradients
 $status-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%);
-$shaded-white: rgba(255, 255, 255, 0.48);
 
 // Type
 $teko: 'Teko', Impact,Franklin Gothic Bold, sans-serif;
@@ -21,3 +23,5 @@ $default-font: $poppins;
 $default-transition: all 300ms ease-in-out;
 $opacity-transition: opacity 300ms ease-in-out;
 $color-transition: color 300ms ease-in-out;
+
+$default-radius: 2px;
