@@ -3,6 +3,14 @@
   align-items: center;
   justify-content: flex-start;
 
+  @media (max-width: $mobile-max) {
+    margin-bottom: 24px;
+  }
+
+  @media (max-width: $mobile-mid) {
+    flex-direction: column;
+  }
+
   &__avatar {
     border: 2px solid $green;
     border-radius: 50%;

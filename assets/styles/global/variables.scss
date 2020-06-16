@@ -31,3 +31,13 @@ $color-transition: color 300ms ease-in-out;
 
 $default-radius: 2px;
 $default-opacity: 0.6;
+
+// Screen sizes
+$desktop-max: 1920px;
+$notebook-max: 1440px;
+$notebook-mid: 1366px;
+$notebook-min: 1280px;
+$desktop-min: 1024px;
+$mobile-max: 768px;
+$mobile-mid: 420px;
+$mobile-min: 320px;

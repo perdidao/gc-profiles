@@ -20,6 +20,15 @@
     svg {
       width: 24px;
     }
+
+    @media (max-width: $mobile-mid) {
+      width: 36px;
+      height: 36px;
+
+      svg {
+        width: 20px;
+      }
+    }
   }
 
   &__nav {
@@ -29,6 +38,10 @@
     padding: 16px;
     border: 1px solid $border-white;
     background-color: $dark-blue;
+
+    @media (max-width: $mobile-mid) {
+      min-width: 240px;
+    }
 
     &:before {
       content: ' ';

@@ -3,6 +3,11 @@
   max-width: 1200px;
   margin: 100px auto;
 
+  @media (max-width: $mobile-mid) {
+    width: 100%;
+    margin: 0;
+  }
+
   &-wrapper {
     border: 1px solid $border-white;
     border-radius: $default-radius;
@@ -26,6 +31,14 @@
     padding: 24px 18px;
     background-color: $navy;
     border-bottom: 1px solid $border-white;
+
+    @media (max-width: $mobile-max) {
+      flex-direction: column;
+    }
+
+    @media (max-width: $mobile-mid) {
+      padding: 16px;
+    }
 
     &--competitive {
       background: linear-gradient(
@@ -67,6 +80,10 @@
     justify-content: stretch;
     background-color: $navy;
 
+    @media (max-width: $mobile-max) {
+      flex-direction: column;
+    }
+
     &__title {
       display: flex;
       align-items: center;
@@ -93,6 +110,16 @@
       padding: 20px;
       border-left: 1px solid $border-white;
 
+      @media (max-width: $mobile-max) {
+        width: 100%;
+        border-left: 0;
+        border-top: 1px solid $border-white;
+      }
+
+      @media (max-width: $mobile-mid) {
+        padding: 16px;
+      }
+
       &:first-child {
         border: 0;
       }
@@ -107,11 +134,29 @@
     align-items: center;
     justify-content: space-between;
 
+    @media (max-width: $mobile-max) {
+      flex-direction: column;
+    }
+
     &__left,
     &__right {
       display: flex;
       align-items: center;
       justify-content: flex-start;
+
+      @media (max-width: $mobile-max) {
+        margin-bottom: 20px;
+
+        &:nth-of-type(2n) {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__right {
+      @media (max-width: $mobile-mid) {
+        flex-direction: column;
+      }
     }
   }
 }
