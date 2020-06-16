@@ -1,0 +1,28 @@
+{
+  "name": "gc-profiles",
+  "version": "1.0.0",
+  "description": "Perfis de jogadores GC",
+  "author": "Lucas Almeida",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "autoprefixer": "^9.8.0",
+    "cssnano": "^4.1.10",
+    "node-sass": "^4.14.1",
+    "nuxt": "^2.0.0",
+    "postcss": "^7.0.32",
+    "rfs": "^9.0.3",
+    "sass-loader": "^8.0.2"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1"
+  }
+}
