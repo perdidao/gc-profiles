@@ -22,7 +22,6 @@ export default {
   build: {
     postcss: {
       plugins: {
-        rfs: {},
         autoprefixer: {},
         cssnano: {}
       }
