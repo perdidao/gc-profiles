@@ -39,6 +39,15 @@
           <gameStats :data="playerInfo.ranked" />
         </div>
       </section>
+      <footer class="player-footer">
+        <div class="player-footer__left">
+          <settings :data="playerInfo.config" />
+          <anticheat :data="playerInfo.anticheat" />
+        </div>
+        <div class="player-footer__right">
+          <report v-for="report in playerInfo.reports" :key="report.type" :data="report" />
+        </div>
+      </footer>
     </section>
   </main>
 </template>
@@ -51,6 +60,10 @@ import featuredMedal from '@/components/profile/featuredMedal'
 
 import tournaments from '@/components/profile/tournaments'
 import gameStats from '@/components/profile/gameStats'
+
+import settings from '@/components/profile/settings'
+import anticheat from '@/components/profile/anticheat'
+import report from '@/components/profile/report'
 
 export default {
   data: () => ({
@@ -89,7 +102,10 @@ export default {
     expertiseProgress,
     featuredMedal,
     tournaments,
-    gameStats
+    gameStats,
+    settings,
+    anticheat,
+    report
   },
   methods: {
     fetchPlayerInfo,
