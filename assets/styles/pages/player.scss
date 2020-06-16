@@ -18,6 +18,7 @@
     justify-content: space-between;
     padding: 24px 18px;
     background-color: $navy;
+    border-bottom: 1px solid $border-white;
 
     &--competitive {
       background: linear-gradient(
@@ -49,6 +50,45 @@
         ),
         url('../images/profile/header-bkg-pro.png'), #212335;
       background-size: cover;
+    }
+  }
+
+  &-sections {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    background-color: $navy;
+
+    &__title {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      font-family: $teko;
+      font-size: 20px;
+      line-height: 20px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    &__icon {
+      width: 24px;
+      margin-right: 5px;
+
+      svg {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    &__col {
+      width: 33.33%;
+      padding: 20px;
+      border-left: 1px solid $border-white;
+
+      &:first-child {
+        border: 0;
+      }
     }
   }
 }

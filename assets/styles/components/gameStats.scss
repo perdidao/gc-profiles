@@ -1,0 +1,63 @@
+.player-games {
+  &__stats {
+    width: 100%;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__stat {
+    width: 32%;
+    padding: 8px 8px 32px;
+    background-image: $status-gradient;
+    font-family: $teko;
+    text-transform: uppercase;
+  }
+
+  &__value {
+    display: block;
+    font-size: 36px;
+
+    &--wins {
+      color: $green;
+    }
+
+    &--losses {
+      color: $pale-red;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 0;
+    font-family: $teko;
+    text-transform: uppercase;
+    border-radius: $default-radius;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.16),
+      inset 0px 1px 0px rgba(255, 255, 255, 0.24);
+    color: black;
+
+    svg {
+      fill: black;
+      width: 26px;
+      margin-right: 10px;
+    }
+
+    span {
+      transform: translateY(2px);
+      font-size: 20px;
+    }
+
+    &--alt {
+      color: white;
+
+      svg {
+        fill: white;
+      }
+    }
+  }
+}

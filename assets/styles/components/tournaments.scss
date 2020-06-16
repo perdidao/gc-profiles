@@ -1,0 +1,54 @@
+.player-tournaments {
+  &__next {
+    padding: 16px;
+    border: 1px solid $border-white;
+    border-radius: $default-radius;
+    background-color: #282a3e;
+  }
+
+  &__open {
+    display: inline-block;
+    padding: 2px 12px;
+    border: 1px solid $green;
+    margin-bottom: 16px;
+    border-radius: $default-radius;
+    font-size: 12px;
+    color: $green;
+  }
+
+  &__title {
+    font-family: $teko;
+    font-size: 24px;
+    line-height: 1;
+    text-transform: uppercase;
+    min-height: 48px;
+    margin-bottom: 8px;
+  }
+
+  &__status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  &__totals {
+    span {
+      color: $shaded-white;
+    }
+  }
+
+  &__bar {
+    width: 100%;
+    border: 1px solid $border-white;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  &__current {
+    height: 8px;
+    background-color: $blue;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16), inset 0px 1px 0px rgba(255, 255, 255, 0.24);
+  }
+}

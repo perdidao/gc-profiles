@@ -28,6 +28,17 @@
           "
         />
       </header>
+      <section class="player-sections">
+        <div class="player-sections__col">
+          <tournaments :data="playerInfo.tournaments" />
+        </div>
+        <div class="player-sections__col">
+          <gameStats :data="playerInfo.lobby" />
+        </div>
+        <div class="player-sections__col">
+          <gameStats :data="playerInfo.ranked" />
+        </div>
+      </section>
     </section>
   </main>
 </template>
@@ -37,6 +48,9 @@ import { fetchPlayerInfo } from '@/utils/api'
 import playerInfo from '@/components/profile/playerInfo'
 import expertiseProgress from '@/components/profile/expertiseProgress'
 import featuredMedal from '@/components/profile/featuredMedal'
+
+import tournaments from '@/components/profile/tournaments'
+import gameStats from '@/components/profile/gameStats'
 
 export default {
   data: () => ({
@@ -73,7 +87,9 @@ export default {
   components: {
     playerInfo,
     expertiseProgress,
-    featuredMedal
+    featuredMedal,
+    tournaments,
+    gameStats
   },
   methods: {
     fetchPlayerInfo,
