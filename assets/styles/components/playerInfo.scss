@@ -9,6 +9,7 @@
 
   @media (max-width: $mobile-mid) {
     flex-direction: column;
+    text-align: center;
   }
 
   &__avatar {
@@ -16,6 +17,10 @@
     border-radius: 50%;
     padding: 2px;
     margin-right: 16px;
+
+    @media (max-width: $mobile-max) {
+      margin:0 auto 8px;
+    }
   }
 
   &__viewport {
@@ -29,11 +34,26 @@
       display: block;
       max-width: 100%;
     }
+
+    @media (max-width: $mobile-max) {
+      width:60px;
+      height:60px;
+    }
+  }
+
+  &__nickname{
+    @media (max-width: $mobile-max) {
+      font-size: 18px;
+    }
   }
 
   &__id {
     color: $shaded-white;
     font-size: 12px;
     line-height: 1.8;
+
+    @media (max-width: $mobile-max) {
+      font-size: 14px;
+    }
   }
 }
