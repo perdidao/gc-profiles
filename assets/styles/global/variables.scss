@@ -1,21 +1,25 @@
 // Colors
 $petroleum: #161724;
 $navy: #212335;
-$blue: #2196FD;
-$bright-red: #F23641;
-$red: #FB4B56;
-$pale-red: #FC6973;
-$yellow: #FACF5A;
-$green: #9CC00C;
+$blue: #2196fd;
+$bright-red: #f23641;
+$red: #fb4b56;
+$pale-red: #fc6973;
+$yellow: #facf5a;
+$green: #9cc00c;
 
 $shaded-white: rgba(255, 255, 255, 0.48);
 $border-white: rgba(255, 255, 255, 0.08);
 
 // Gradients
-$status-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%);
+$status-gradient: linear-gradient(
+  180deg,
+  rgba(255, 255, 255, 0.04) 0%,
+  rgba(255, 255, 255, 0) 100%
+);
 
 // Type
-$teko: 'Teko', Impact,Franklin Gothic Bold, sans-serif;
+$teko: 'Teko', Impact, Franklin Gothic Bold, sans-serif;
 $poppins: 'Poppins', Arial, Helvetica, sans-serif;
 $default-font: $poppins;
 

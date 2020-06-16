@@ -1,0 +1,39 @@
+.player-medal {
+  width: 60px;
+  height: 80px;
+  padding: 16px 2px 8px;
+  border: 1px solid $green;
+  border-radius: $default-radius;
+  position: relative;
+
+  &:before {
+    content: ' ';
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    border-top: 1px dashed $green;
+  }
+
+  &--competitive {
+    border-color: $blue;
+
+    &:before {
+      border-color: $blue;
+    }
+  }
+
+  &--pro {
+    border-color: $red;
+
+    &:before {
+      border-color: $red;
+    }
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+}

@@ -1,1 +1,66 @@
-.expertise{}
+.player-expertise {
+  padding: 24px 0;
+  position: relative;
+
+  &__bar {
+    width: 480px;
+    height: 16px;
+    border-radius: 8px;
+    padding: 4px;
+    background: #1c1d2c;
+    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.04),
+      inset 0px 2px 4px rgba(0, 0, 0, 0.16);
+  }
+
+  &__current {
+    background-color: $green;
+    height: 8px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.16),
+      inset 0px 1px 0px rgba(255, 255, 255, 0.24);
+
+    &--competitive {
+      background-color: $blue;
+    }
+
+    &--pro {
+      background-color: $red;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    font-family: $teko;
+    text-transform: uppercase;
+
+    &:nth-of-type(2n) {
+      top: auto;
+      bottom: 0;
+
+      svg {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+  &__icon {
+    margin-left: 5px;
+    fill: $shaded-white;
+
+    &--competitive {
+      &.active {
+        fill: $blue;
+      }
+    }
+
+    &--pro {
+      &.active {
+        fill: $red;
+      }
+    }
+  }
+}

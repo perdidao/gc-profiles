@@ -7,8 +7,26 @@
       </router-link>
     </p>
     <section class="player-wrapper" v-if="!loading && error === ''">
-      <header class="player-header" :class="'player-header--'+playerExpertiseSlug(playerInfo.player.expertise)">
-        <p>{{ playerInfo.player.nickname }}</p>
+      <header
+        class="player-header"
+        :class="
+          'player-header--' + playerExpertiseSlug(playerInfo.player.expertise)
+        "
+      >
+        <playerInfo :data="playerInfo.player" />
+        <expertiseProgress
+          :data="playerInfo.expertiseProgress"
+          :playerExpertise="playerInfo.player.expertise"
+          :playerExpertiseSlug="
+            playerExpertiseSlug(playerInfo.player.expertise)
+          "
+        />
+        <featuredMedal
+          :data="playerInfo.featuredMedal"
+          :playerExpertiseSlug="
+            playerExpertiseSlug(playerInfo.player.expertise)
+          "
+        />
       </header>
     </section>
   </main>
@@ -16,6 +34,9 @@
 
 <script>
 import { fetchPlayerInfo } from '@/utils/api'
+import playerInfo from '@/components/profile/playerInfo'
+import expertiseProgress from '@/components/profile/expertiseProgress'
+import featuredMedal from '@/components/profile/featuredMedal'
 
 export default {
   data: () => ({
@@ -48,6 +69,11 @@ export default {
     this.playerHash = this.findPlayerHash(this.playerId)
     // Fetching current player's data from API
     fetchPlayerInfo(this)
+  },
+  components: {
+    playerInfo,
+    expertiseProgress,
+    featuredMedal
   },
   methods: {
     fetchPlayerInfo,
