@@ -1,0 +1,61 @@
+.initial {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &-title {
+    margin-bottom: 30px;
+    font-family: $teko;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+
+  &-players {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-player {
+    text-align: center;
+    margin: 0 30px;
+
+    &__avatar {
+      display: block;
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 10px;
+      border-radius: 50%;
+      overflow: hidden;
+      transition: $opacity-transition;
+
+      &:hover {
+        opacity: 0.6;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+    }
+
+    &__nickname {
+      color: $shaded-white;
+      font-size: 12px;
+      transition: $color-transition;
+
+      &:hover {
+        color: $green;
+      }
+    }
+
+    &__name {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 16px;
+    }
+  }
+}

@@ -1,4 +1,5 @@
 // Colors
+$petroleum: #161724;
 $navy: #212335;
 $blue: #2196FD;
 $bright-red: #F23641;
@@ -9,10 +10,14 @@ $green: #9CC00C;
 
 // Gradients
 $status-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0) 100%);
+$shaded-white: rgba(255, 255, 255, 0.48);
 
 // Type
 $teko: 'Teko', Impact,Franklin Gothic Bold, sans-serif;
 $poppins: 'Poppins', Arial, Helvetica, sans-serif;
 $default-font: $poppins;
 
-$header-gradient: linear-gradient(180deg, rgba(73, 163, 253, 0.16) 0%, rgba(73, 163, 253, 0) 100%), linear-gradient(90deg, #212335 17.54%, rgba(33, 35, 53, 0.64) 51.46%, #212335 82.67%), url('competitive.png'), #212335;
+// Misc
+$default-transition: all 300ms ease-in-out;
+$opacity-transition: opacity 300ms ease-in-out;
+$color-transition: color 300ms ease-in-out;

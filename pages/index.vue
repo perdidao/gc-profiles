@@ -1,7 +1,28 @@
 <template>
-  <div class="container">
-    <h1>Main</h1>
-  </div>
+  <main class="initial">
+    <h1 class="initial-title">Perfis de jogadores</h1>
+    <section class="initial-players">
+      <div class="initial-player" v-for="player in players" :key="player.id">
+        <figure class="initial-player__avatar">
+          <router-link
+            :to="'/player/' + player.id"
+            :title="'Perfil de ' + player.nickname"
+          >
+            <img :src="player.avatar" :alt="player.nickname" />
+          </router-link>
+        </figure>
+        <h2 class="initial-player__nickname">
+          <router-link
+            :to="'/player/' + player.id"
+            :title="'Perfil de ' + player.nickname"
+          >
+            <strong class="initial-player__name">{{ player.nickname }}</strong>
+            ID: {{ player.id }}
+          </router-link>
+        </h2>
+      </div>
+    </section>
+  </main>
 </template>
 
 <script>
