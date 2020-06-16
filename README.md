@@ -15,3 +15,6 @@ $ yarn dev
 # Para gerar o projeto estático (SPA)
 $ yarn generate
 ```
+
+## Informações de deploy
+> Commits na master são publicados no link provisório do Vercel
