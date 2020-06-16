@@ -6,6 +6,7 @@
         Voltar para a página inicial
       </router-link>
     </p>
+    <div class="loading-wheel" v-if="loading"></div>
     <section class="player-wrapper" v-if="!loading && error === ''">
       <header
         class="player-header"
