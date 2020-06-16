@@ -1,0 +1,76 @@
+.player-settings {
+  position: relative;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: $default-radius;
+    border: 1px solid $border-white;
+    margin-right: 8px;
+    background-color: $dark-blue;
+    transition:$opacity-transition;
+
+    &:hover{
+      opacity: $default-opacity;
+    }
+
+    svg {
+      width: 24px;
+    }
+  }
+
+  &__nav {
+    position: absolute;
+    top: 48px;
+    min-width: 280px;
+    padding: 16px;
+    border: 1px solid $border-white;
+    background-color: $dark-blue;
+
+    &:before {
+      content: ' ';
+      display: block;
+      width: 16px;
+      height: 8px;
+      background-color: $red;
+      position: absolute;
+      top: -8px;
+      left: 12px;
+      background: url(../images/profile/nav-triangle.png) no-repeat center
+        center;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 16px;
+    font-size: 14px;
+    transition: $opacity-transition;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__icon {
+    width: 24px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 16px;
+
+    svg {
+      fill: $shaded-white;
+    }
+  }
+}

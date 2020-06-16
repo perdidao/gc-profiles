@@ -9,7 +9,8 @@
 
   &__stat {
     width: 32%;
-    padding: 8px 8px 32px;
+    height: 92px;
+    padding: 8px;
     background-image: $status-gradient;
     font-family: $teko;
     text-transform: uppercase;
@@ -33,18 +34,23 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 10px 0;
+    padding: 8px 0;
     font-family: $teko;
     text-transform: uppercase;
     border-radius: $default-radius;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.16),
       inset 0px 1px 0px rgba(255, 255, 255, 0.24);
     color: black;
+    transition: $opacity-transition;
+
+    &:hover{
+      opacity: 0.6;
+    }
 
     svg {
       fill: black;
-      width: 26px;
-      margin-right: 10px;
+      height: 22px;
+      margin-right: 4px;
     }
 
     span {

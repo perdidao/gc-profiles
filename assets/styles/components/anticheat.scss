@@ -1,0 +1,27 @@
+.player-anticheat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding: 0 24px;
+  border: 1px solid $border-white;
+  border-radius: $default-radius;
+  background-color: $dark-blue;
+  font-family: $teko;
+  text-transform: uppercase;
+  font-size: 20px;
+  transition:$opacity-transition;
+
+  &:hover{
+    opacity: $default-opacity;
+  }
+
+  svg {
+    height: 20px;
+  }
+
+  span {
+    // Visual correction of the bad font x-height
+    transform: translateY(2px);
+  }
+}

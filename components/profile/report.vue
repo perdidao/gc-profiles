@@ -4,7 +4,10 @@
       {{ data.total }}
     </p>
     <p class="player-report__label">
-      {{ data.label }}
+      {{ parseLabelText(data.label) }}
+      <strong class="player-report__highlighted">{{
+        parseLabelHightlight(data.label)
+      }}</strong>
     </p>
   </div>
 </template>
@@ -15,6 +18,17 @@ export default {
     data: {
       type: Object,
       default: {}
+    }
+  },
+  methods: {
+    parseLabelText(string) {
+      const initial = string.split(' **')
+      return initial[0]
+    },
+    parseLabelHightlight(string) {
+      const rgx = /\*{2}(.*?)\*{2}/
+      const highlighted = rgx.exec(string)
+      return highlighted[1]
     }
   }
 }

@@ -1,0 +1,37 @@
+.player-report {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 24px;
+
+  &__total {
+    font-family: $teko;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: $green;
+    margin-right: 8px;
+  }
+
+  &__label {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__highlighted {
+    display: block;
+  }
+
+  &--online {
+    .player-report__total,
+    .player-report__highlighted {
+      color: $blue;
+    }
+  }
+
+  &--banned {
+    .player-report__total,
+    .player-report__highlighted {
+      color: $red;
+    }
+  }
+}
