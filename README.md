@@ -1,5 +1,5 @@
 # Perfis da GC
-[Link provisório](https://gc.lucasalmeida.dev)
+[Link provisório](https://gc-profiles.vercel.app/)
 
 > Teste de desenvolvimento front-end com APIs rest
 

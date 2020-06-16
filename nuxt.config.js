@@ -14,7 +14,7 @@ export default {
     link: [{ rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' }]
   },
   env: {
-    api: 'http://www.mocky.io/v2/'
+    api: 'https://www.mocky.io/v2/'
   },
   loading: { color: '#fff' },
   css: ['assets/styles/main.scss'],
