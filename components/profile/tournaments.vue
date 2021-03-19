@@ -31,20 +31,18 @@
       <div class="player-tournaments__status">
         <p class="player-tournaments__teams">Times inscritos</p>
         <p class="player-tournaments__totals">
-          {{ data.nextTournament.currentTeams
-          }}<span>/{{ data.nextTournament.maxTeams }}</span>
+          {{ data.nextTournament.currentTeams }}
+          <span>/{{ data.nextTournament.maxTeams }}</span>
         </p>
       </div>
       <div class="player-tournaments__bar">
         <div
           class="player-tournaments__current"
           :style="
-            'width:' +
-              teamsPercentage(
-                data.nextTournament.currentTeams,
-                data.nextTournament.maxTeams
-              ) +
-              '%;'
+            `width:${teamsPercentage(
+              data.nextTournament.currentTeams,
+              data.nextTournament.maxTeams
+            )}%;`
           "
         ></div>
       </div>

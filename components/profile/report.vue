@@ -1,13 +1,13 @@
 <template>
-  <div class="player-report" :class="'player-report--' + data.type">
+  <div class="player-report" :class="`player-report--${data.type}`">
     <p class="player-report__total">
       {{ data.total }}
     </p>
     <p class="player-report__label">
       {{ parseLabelText(data.label) }}
-      <strong class="player-report__highlighted">{{
-        parseLabelHightlight(data.label)
-      }}</strong>
+      <strong class="player-report__highlighted">
+        {{ parseLabelHightlight(data.label) }}
+      </strong>
     </p>
   </div>
 </template>

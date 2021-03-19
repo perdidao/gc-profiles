@@ -5,16 +5,16 @@
       <div class="initial-player" v-for="player in players" :key="player.id">
         <figure class="initial-player__avatar">
           <router-link
-            :to="'/player/' + player.id"
-            :title="'Perfil de ' + player.nickname"
+            :to="`/player/${player.id}`"
+            :title="`Perfil de ${player.nickname}`"
           >
             <img :src="player.avatar" :alt="player.nickname" />
           </router-link>
         </figure>
         <h2 class="initial-player__nickname">
           <router-link
-            :to="'/player/' + player.id"
-            :title="'Perfil de ' + player.nickname"
+            :to="`/player/${player.id}`"
+            :title="`Perfil de ${player.nickname}`"
           >
             <strong class="initial-player__name">{{ player.nickname }}</strong>
             ID: {{ player.id }}

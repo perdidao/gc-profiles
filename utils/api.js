@@ -32,10 +32,11 @@ export const fetchPlayerInfo = self => {
   Axios.get(`${process.env.api}${playerHash}`)
     .then(response => {
       self.playerInfo = response.data.data
-      self.loading = false
     })
     .catch(error => {
       errorFeedback(error, self)
+    })
+    .finally(() => {
       self.loading = false
     })
 }

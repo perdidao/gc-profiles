@@ -11,7 +11,7 @@
       <header
         class="player-header"
         :class="
-          'player-header--' + playerExpertiseSlug(playerInfo.player.expertise)
+          `player-header--${playerExpertiseSlug(playerInfo.player.expertise)}`
         "
       >
         <playerInfo :data="playerInfo.player" />
@@ -46,7 +46,11 @@
           <anticheat :data="playerInfo.anticheat" />
         </div>
         <div class="player-footer__right">
-          <report v-for="report in playerInfo.reports" :key="report.type" :data="report" />
+          <report
+            v-for="report in playerInfo.reports"
+            :key="report.type"
+            :data="report"
+          />
         </div>
       </footer>
     </section>

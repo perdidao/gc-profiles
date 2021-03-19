@@ -22,21 +22,22 @@
       <div class="player-games__stat">
         <strong
           class="player-games__value"
-          :style="'color:' + parseHighlightColor(data.type) + ';'"
-          >{{ data.matches }}</strong
+          :style="`color:${parseHighlightColor(data.type)};`"
         >
+          {{ data.matches }}
+        </strong>
         Partidas
       </div>
       <div class="player-games__stat">
-        <strong class="player-games__value player-games__value--wins">{{
-          data.wins
-        }}</strong>
+        <strong class="player-games__value player-games__value--wins">
+          {{ data.wins }}
+        </strong>
         Vitórias
       </div>
       <div class="player-games__stat">
-        <strong class="player-games__value player-games__value--losses">{{
-          data.losses
-        }}</strong>
+        <strong class="player-games__value player-games__value--losses">
+          {{ data.losses }}
+        </strong>
         Derrotas
       </div>
     </section>
@@ -44,7 +45,7 @@
       :href="data.action.link"
       class="player-games__button"
       :class="data.type ? 'player-games__button--alt' : ''"
-      :style="'background-color:' + parseHighlightColor(data.type) + ';'"
+      :style="`background-color:${parseHighlightColor(data.type)};`"
     >
       <svg
         width="32"

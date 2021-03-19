@@ -1,4 +1,5 @@
 # Perfis da GC
+
 [Link provisório](https://gc-profiles.vercel.app/)
 
 > Teste de desenvolvimento front-end com APIs rest
@@ -17,4 +18,5 @@ $ yarn generate
 ```
 
 ## Informações de deploy
-> Commits na master são publicados no link provisório do Vercel
+
+> Commits na branch main são publicados no link provisório do Vercel

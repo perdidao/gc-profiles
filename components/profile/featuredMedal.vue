@@ -1,5 +1,5 @@
 <template>
-  <figure class="player-medal" :class="'player-medal--' + playerExpertiseSlug">
+  <figure class="player-medal" :class="`player-medal--${playerExpertiseSlug}`">
     <img :src="data.image" :alt="data.name" />
   </figure>
 </template>

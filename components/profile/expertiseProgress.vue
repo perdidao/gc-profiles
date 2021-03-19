@@ -3,8 +3,8 @@
     <div class="player-expertise__bar">
       <div
         class="player-expertise__current"
-        :class="'player-expertise__current--' + playerExpertiseSlug"
-        :style="'width:' + playerExpertise + '%;'"
+        :class="`player-expertise__current--${playerExpertiseSlug}`"
+        :style="`width:${playerExpertise}%;`"
       ></div>
     </div>
     <ul class="player-expertise__list">
@@ -12,7 +12,7 @@
         class="player-expertise__item"
         v-for="step in data"
         :key="step.key"
-        :style="'right:' + (100 - step.limit) + '%;'"
+        :style="`right:${100 - step.limit}%;`"
       >
         {{ step.label }}
         <svg
@@ -24,7 +24,7 @@
           class="player-expertise__icon"
           :class="
             playerExpertise >= step.limit
-              ? 'player-expertise__icon--' + playerExpertiseSlug + ' active'
+              ? `player-expertise__icon--${playerExpertiseSlug} active`
               : ''
           "
         >
